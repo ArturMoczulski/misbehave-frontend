@@ -25,3 +25,10 @@ Development installation
 ------------------------
 1. Install Node.js and NPM on your environment.
 2. `git clone https://github.com/ArturMoczulski/misbehave-frontend && cd misbehave-frontend && npm install`
+
+
+Development conventions
+-----------------------
+* Test first
+* HTML with jade and twitter bootstrap
+* use .editorconfig

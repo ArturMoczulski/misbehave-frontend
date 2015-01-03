@@ -4,7 +4,7 @@
   "homepage": "https://github.com/ArturMoczulski/misbehave-frontend",
   "bugs": "https://github.com/ArturMoczulski/misbehave-frontend/issues",
   "author": {
-    "name": "Misbehave",
+    "name": "Misbehave"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "yo": "*",
     "bower": "*",
+    "grunt": "*",
     "grunt-cli": "*",
     "generator-angular-bootstrap": "*",
     "chalk": "^0.5.1",

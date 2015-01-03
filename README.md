@@ -26,6 +26,11 @@ Development installation
 1. Install Node.js and NPM on your environment.
 2. `git clone https://github.com/ArturMoczulski/misbehave-frontend && cd misbehave-frontend && npm install && bower install`
 
+Useful vim plugins
+------------------
+* https://github.com/editorconfig/editorconfig-vim
+* https://github.com/digitaltoad/vim-jade
+
 
 Development conventions
 -----------------------

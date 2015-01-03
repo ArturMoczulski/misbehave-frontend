@@ -18,7 +18,7 @@ Initial Angular setup
 * Should I set up one of those HTML preprocessors for you? jade
 * Should I set up one of those JS preprocessors for you? none
 * Should I set up one of those CSS preprocessors for you? sass
-* Would you want me to support old versions of Internet Explorer (eg. before IE9)? (Us? Would you want me to support old versions of Internet Explorer (eg. before IE9)? no
+* Would you want me to support old versions of Internet Explorer (eg. before IE9)? no
 
 
 Development installation

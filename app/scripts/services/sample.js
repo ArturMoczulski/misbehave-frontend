@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('ArturMoczulski.MisbehaveFrontend');
+angular.module('Misbehave.Frontend');

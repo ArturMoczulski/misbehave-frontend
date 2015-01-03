@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ArturMoczulski.MisbehaveFrontend')
+angular.module('Misbehave.Frontend')
 
   .filter('time', function() {
     return function(obj) {

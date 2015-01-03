@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ArturMoczulski.MisbehaveFrontend', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'mgcrea.ngStrap'])
+angular.module('Misbehave.Frontend', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'mgcrea.ngStrap'])
 
   .constant('version', 'v0.1.0')
 

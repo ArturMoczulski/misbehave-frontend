@@ -24,7 +24,7 @@ Initial Angular setup
 Development installation
 ------------------------
 1. Install Node.js and NPM on your environment.
-2. `git clone https://github.com/ArturMoczulski/misbehave-frontend && cd misbehave-frontend && npm install && bower install`
+2. `git clone https://github.com/ArturMoczulski/misbehave-frontend && cd misbehave-frontend && npm install && node_modules/.bin/bower install && node_modules/.bin/gulp build && node_modules/.bin/gulp`
 
 Useful vim plugins
 ------------------

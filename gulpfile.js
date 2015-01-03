@@ -44,18 +44,18 @@ var banner = gutil.template('/**\n' +
 
 // CLEAN
 //
-var clean = require('gulp-clean');
+var rimraf = require('gulp-rimraf');
 gulp.task('clean:tmp', function() {
   return gulp.src(['.tmp/*'], {read: false})
-    .pipe(clean());
+    .pipe(rimraf());
 });
 gulp.task('clean:test', function() {
   return gulp.src(['test/.tmp/*', 'test/coverage/*'], {read: false})
-    .pipe(clean());
+    .pipe(rimraf());
 });
 gulp.task('clean:dist', function() {
   return gulp.src(['.tmp/*', src.dest + '/*'], {read: false})
-    .pipe(clean());
+    .pipe(rimraf());
 });
 
 
@@ -130,7 +130,7 @@ gulp.task('scripts:dist', function() {
 
 // STYLES
 //
-var prefix = require('gulp-autoprefixer');
+var autoprefixer = require('gulp-autoprefixer');
 gulp.task('styles:src', function() {
   gulp.src(src.styles, {cwd: src.cwd, base: src.cwd})
     .pipe(changed(src.tmp))
@@ -194,7 +194,7 @@ gulp.task('views:dist', function() {
     .pipe(jade({pretty: true}))
     .pipe(jadeFilter.restore())
     .pipe(htmlmin({removeComments: true, collapseWhitespace: true}))
-    .pipe(ngtemplate({module: 'ArturMoczulski.MisbehaveFrontend'}))
+    .pipe(ngtemplate({module: 'Misbehave.Frontend'}))
     .pipe(ngAnnotate())
     .pipe(concat.scripts('views.tpl.js'))
     .pipe(concat.header(banner))

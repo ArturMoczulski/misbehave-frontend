@@ -1,0 +1,38 @@
+{
+  "name": "misbehave-frontend",
+  "version": "0.1.0",
+  "description": "Yet another amazing AngularJS app",
+  "keywords": [
+    "angular"
+  ],
+  "homepage": "https://github.com/ArturMoczulski/misbehave-frontend",
+  "bugs": "https://github.com/ArturMoczulski/misbehave-frontend/issues",
+  "author": {
+    "name": "Artur Moczulski",
+    "email": "artur.moczulski@gmail.com",
+    "url": "https://github.com/ArturMoczulski"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArturMoczulski/misbehave-frontend.git"
+  },
+   "licenses": [
+    {
+      "type": "private"
+    }
+  ],
+  "dependencies": {
+    "bootstrap": "^3.0",
+    "font-awesome": "^4.0",
+    "angular-strap": "^2.0",
+    "angular-motion": "^0.3",
+    "ui-router": "^0.2",
+    "angular-animate": "~1.3.0",
+    "angular-cookies": "~1.3.0",
+    "angular-resource": "~1.3.0",
+    "angular-route": "~1.3.0",
+    "angular-sanitize": "~1.3.0",
+    "angular-touch": "~1.3.0",
+    "angular": "~1.3.0"
+  }
+}

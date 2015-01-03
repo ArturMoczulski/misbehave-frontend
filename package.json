@@ -1,0 +1,26 @@
+{
+  "name": "misbehave-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArturMoczulski/misbehave-frontend.git"
+  },
+  "author": "Misbehave",
+  "license": "private",
+  "bugs": {
+    "url": "https://github.com/ArturMoczulski/misbehave-frontend/issues"
+  },
+  "homepage": "https://github.com/ArturMoczulski/misbehave-frontend",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "yo": "*",
+    "bower": "*",
+    "grunt-cli": "*",
+    "generator-angular-bootstrap": "*"
+  }
+}

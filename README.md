@@ -37,3 +37,9 @@ Development conventions
 * Test first
 * HTML with jade and twitter bootstrap
 * use .editorconfig
+
+Using tools
+-----------
+Please use tools as installed per project instead of your globally installed versions. NPM is the
+only exceptions. All the tools binaries will be installed to:
+* node_modules/.bin/

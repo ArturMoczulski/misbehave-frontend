@@ -25,19 +25,24 @@ html(class="no-js", lang="en", ng-app="Misbehave.Frontend")
   // endbower
   // endbuild
 
-  // build:css(.tmp) styles/main.min.css
-  //-link(rel="stylesheet", href="styles/main.css")
+  //
+    This used to be: build:css(.tmp) but gulp-usemin was not working correctly;
+    I skipped the step of taking stylesheets from the .tmp directory and using
+    the ones from the app/ directory instead.
+    This needs to be checked as I'm not sure if I'm not skipping any vital steps.
+  // build:css styles/main.min.css
+  link(rel="stylesheet", href="styles/main.css")
   // endbuild
 
   body
     .site-wrapper
       .site-wrapper-inner
-        .masthead.clearfix
-          .inner(ng-include="'views/partials/header.html'")
+        // .masthead.clearfix
+        //   .inner(ng-include="'views/partials/header.html'")
         .inner.cover
           .inner(ng-view)
-        .mastfoot
-          .inner(ng-include="'views/partials/footer.html'")
+        // .mastfoot
+        //   .inner(ng-include="'views/partials/footer.html'")
 
     // build:libs scripts/components.min.js
     // bower:js

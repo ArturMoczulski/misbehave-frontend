@@ -37,8 +37,8 @@ html(class="no-js", lang="en", ng-app="Misbehave.Frontend")
   body
     .site-wrapper
       .site-wrapper-inner
-        // .masthead.clearfix
-        //   .inner(ng-include="'views/partials/header.html'")
+        .masthead.clearfix
+          .inner(ng-include="'views/partials/header.html'")
         .inner.cover
           .inner(ng-view)
         // .mastfoot
@@ -52,4 +52,5 @@ html(class="no-js", lang="en", ng-app="Misbehave.Frontend")
     // build:js scripts/main.min.js
     script(src="scripts/app.js")
     script(src="scripts/controllers/main.js")
+    script(src="scripts/controllers/user_sessions.js")
     // endbuild

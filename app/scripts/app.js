@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Misbehave.Frontend', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'mgcrea.ngStrap'])
+angular.module('Misbehave.Frontend', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'mgcrea.ngStrap', 'ng-token-auth'])
 
   .constant('version', 'v0.1.0')
 
@@ -17,6 +17,10 @@ angular.module('Misbehave.Frontend', ['ngAnimate', 'ngCookies', 'ngResource', 'n
       })
       .when('/contact', {
         templateUrl: 'views/contact.html'
+      })
+      .when('/sign_in', {
+        templateUrl: 'views/user_sessions/new.html',
+        controller: 'UserSessionsCtrl'
       })
       .otherwise({
         redirectTo: '/'

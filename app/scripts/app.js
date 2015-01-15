@@ -20,7 +20,7 @@ angular.module('Misbehave.Frontend', ['ngAnimate', 'ngCookies', 'ngResource', 'n
       })
       .when('/sign_in', {
         templateUrl: 'views/user_sessions/new.html',
-        controller: 'UserSessionsCtrl'
+        controller: 'UserSessionsController'
       })
       .otherwise({
         redirectTo: '/'

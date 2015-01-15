@@ -1,3 +1,3 @@
-angular.module('UserSessionsCtrl', ['$scope', function($scope) {
+angular.module('UserSessionsController', ['$scope', function($scope) {
     
 }]);

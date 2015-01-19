@@ -1,29 +1,45 @@
 'use strict';
 
-angular.module('Misbehave.Frontend', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'mgcrea.ngStrap', 'ng-token-auth'])
-
-  .constant('version', 'v0.1.0')
-
-  .config(function($locationProvider, $routeProvider) {
-
-    $locationProvider.html5Mode(false);
-
+/**
+ * @ngdoc overview
+ * @name misbehaveFrontendApp
+ * @description
+ * # misbehaveFrontendApp
+ *
+ * Main module of the application.
+ */
+angular
+  .module('misbehaveFrontendApp', [
+    'ngAnimate',
+    'ngAria',
+    //'ngCookies',
+    'ngMessages',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch',
+    'ipCookie',
+    'ng-token-auth'
+  ])
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/home.html'
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
       })
-      .when('/features', {
-        templateUrl: 'views/features.html'
+      .when('/login', {
+        templateUrl: 'views/login.html'
       })
-      .when('/contact', {
-        templateUrl: 'views/contact.html'
-      })
-      .when('/sign_in', {
-        templateUrl: 'views/user_sessions/new.html',
-        controller: 'UserSessionsController'
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
-
+  })
+  .config(function ($authProvider) {
+    $authProvider.configure({
+      apiUrl: 'https://api.misbehavewith.me'
+    });
   });

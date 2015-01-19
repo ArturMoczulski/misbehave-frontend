@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name misbehaveFrontendApp.controller:MainCtrl
+ * @name misbehaveFrontendApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the misbehaveFrontendApp
  */
 angular.module('misbehaveFrontendApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

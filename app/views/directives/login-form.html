@@ -1,0 +1,9 @@
+<form novalidate ng-submit="submit()" name="loginForm">
+	<label>Username</label>
+	<input type="text" name="username" ng-model="userSession.username" required class="form-control" />
+
+	<label>Password</label>
+	<input type="password" name="password" ng-model="userSession.password" required class="form-control" />
+
+	<input type="submit" name="submit" value="Login" class="btn btn-primary btn-lg" />
+</form>

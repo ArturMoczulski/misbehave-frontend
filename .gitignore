@@ -1,7 +1,5 @@
-.DS_Store
-bower_components/
-node_modules/
-.tmp/
-npm-debug.log
-dist/
-.c9/
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
